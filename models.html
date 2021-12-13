@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset -->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
+  <!-- Normalize -->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap-grid.min.css">-->
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/configuration.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/models.css">
+</head>
+
+<body>
+  <header class="header " id="header">
+    <div class="header__body container">
+      <div class="header__burger">
+        <div class="header__burger__line-1"></div>
+        <div class="header__burger__line-2"></div>
+        <div class="header__burger__line-3"></div>
+      </div>
+      <nav class="header__menu side">
+        <div class="header__sideinfo">
+          <div class="header__burger">
+            <div class="header__burger__line-1"></div>
+            <div class="header__burger__line-2"></div>
+            <div class="header__burger__line-3"></div>
+          </div>
+          <a href="index.html">
+            <img src="img/logos/header_logo.png" alt="" class="header__logo">
+          </a>
+          <span class="header__callback">
+            <img src="img/icons/header_callback-icon.svg" alt="">
+          </span>
+        </div>
+
+        <!--header__list копируется из базового меню ниже с помощью JS (Header SideMenu List Creator) -->
+      </nav>
+      <nav class="header__menu basic">
+        <a href="index.html">
+          <img src="img/logos/header_logo.png" alt="" class="header__logo">
+        </a>
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Главная <div></div>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Проекты <div></div>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Компания <div></div>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Акции <span>2</span>
+              <div></div>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Отдел заботы <div></div>
+            </a>
+          </li>
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Контакты <div></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <span class="header__phone">+7 (3452) 53-98-53</span>
+        <a class="header__callback modal-form">
+          <img src="img/icons/header_callback-icon.svg" alt="">
+          <span>Перезвонить вам?</span>
+        </a>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </header>
+
+  <section class="startpage">
+    <div class="container">
+      <div class="startpage__body">
+        <div class="startpage__media">
+          <div class="startpage__media__line"></div>
+          <a href="" class="startpage__media__item">
+            <img src="img/icons/startpage_media-fb.svg" alt="">
+          </a>
+          <a href="" class="startpage__media__item">
+            <img src="img/icons/startpage_media-ok.svg" alt="">
+          </a>
+          <a href="" class="startpage__media__item">
+            <img src="img/icons/startpage_media-vk.svg" alt="">
+          </a>
+          <a href="" class="startpage__media__item">
+            <img src="img/icons/startpage_media-inst.svg" alt="">
+          </a>
+          <a href="" class="startpage__media__item">
+            <img src="img/icons/startpage_media-youtube.svg" alt="">
+          </a>
+        </div>
+        <div class="startpage__characteristics">
+          <h1 class="startpage__characteristics__header">Ты тут главный!</h1>
+          <ul class="startpage__characteristics__list">
+            <li class="startpage__characteristics__list-item">топовая функциональность</li>
+            <li class="startpage__characteristics__list-item">максимальная комплектация</li>
+            <li class="startpage__characteristics__list-item">самый функциональный в своем классе</li>
+          </ul>
+          <h1 class="startpage__characteristics__price">от 1 450 000 ₽</h1>
+        </div>
+        <div class="startpage__info">
+          <div class="startpage__info__slider">
+            <div class="startpage__info__row">
+              <div class="startpage__info__item">
+                <img src="img/logos/startpage_logo.png" alt="" class="startpage__info__logo">
+              </div>
+              <div class="startpage__info__item">
+                <img src="img/logos/startpage_logo.png" alt="" class="startpage__info__logo">
+              </div>
+              <div class="startpage__info__item">
+                <img src="img/logos/startpage_logo.png" alt="" class="startpage__info__logo">
+              </div>
+              <div class="startpage__info__item">
+                <img src="img/logos/startpage_logo.png" alt="" class="startpage__info__logo">
+              </div>
+            </div>
+          </div>
+          <div class="startpage__info__changer">
+            <img src="img/icons/startpage_switch_left.png" alt="" class="startpage__info__changer__switch left">
+            <span class="startpage__info__changer__numbers status">01</span>
+            <div class="startpage__info__changer__full-line">
+              <div class="startpage__info__changer__loaded-line">
+
+              </div>
+            </div>
+            <span class="startpage__info__changer__numbers col">04</span>
+            <img src="img/icons/startpage_switch_right.png" alt="" class="startpage__info__changer__switch right">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="startpage__details">ПОДРОБНЕЕ</button>
+  </section>
+  <section class="models">
+    <div class="models__body container">
+      <div class="models__address">
+        <a href="" class="models__address__link">Главная</a>
+        <img class="models__address__slash" src="img/icons/models_address-slash.svg" alt="">
+        <a href="" class="models__address__link">Модель квартиры</a>
+        <img class="models__address__slash" src="img/icons/models_address-slash.svg" alt="">
+        <a href="" class="models__address__link active">Старт</a>
+      </div>
+      <h2 class="models__header sub">Описание модели квартиры</h2>
+      <p class="models__desc">
+        Идеальна для тех, кто принял решение начать новый жизненный этап в своей собственной квартире. Надежный стартовый вариант в оптимальной комплектации.
+        Активного пространства
+        студии достаточно для комфортной организации жизни в ней. Модная лаконичная
+        студия, где во главе функциональность и присутствует
+        простор для творчества хозяина.
+        <br>
+        <br>
+        Практичная и понятная планировка предусматривает место для хранения вещей и
+        бытовых приборов, небольшую зону для приготов ления пищи. Рабочее пространство
+        с естественным светом за счет больших окон легко превращается в обеденную зону для
+        себя или своих гостей. Вместительный раскладной диван послужит для отдыха
+        и сна.
+        Лоджия будет хорошим дополнением, где можно хранить спортивный инвентарь и дышать свежим воздухом - беспроигрышный вариант.
+      </p>
+      <h2 class="models__subheader">Все комплектации Старт</h2>
+      <div class="models__row">
+        <div class="models__item">
+          <div class="models__item__pic">
+            <div class="models__item__pic__info">
+              <img src="img/attachments/start_item-1_logo.png" alt="" class="models__item__pic__logo">
+            </div>
+            <img src="img/attachments/start_item-1.png" alt="" class="models__item__pic__bg">
+          </div>
+          <div class="models__item__details">
+            <img src="img/attachments/start_item-1_details.png" alt="" class="models__item__details__pic">
+            <h2 class="models__item__details__header">Старт оптима</h2>
+            <p class="models__item__details__text">Надежный стартовый вариант в оптимальной комплектации. Актив-
+              ного пространства студии достаточно для комфортной организации
+              жизни в ней. Модная лаконичная студия, где во главе функциональ-
+              ность и присутствует простор для творчества хозяина.</p>
+            <ul class="models__item__details__list">
+              <li class="models__item__details__list-item">топовая функциональность</li>
+              <li class="models__item__details__list-item">максимальная комплектация</li>
+              <li class="models__item__details__list-item">самый функциональный в своем классе</li>
+            </ul>
+          </div>
+        </div>
+        <div class="models__item">
+          <div class="models__item__pic">
+            <div class="models__item__pic__info">
+              <img src="img/attachments/start_item-2_logo.png" alt="" class="models__item__pic__logo">
+            </div>
+            <div class="models__item__details">
+              <img src="img/attachments/start_item-1_details.png" alt="" class="models__item__details__pic">
+              <h2 class="models__item__details__header">Старт оптима</h2>
+              <p class="models__item__details__text">Надежный стартовый вариант в оптимальной комплектации. Актив-
+                ного пространства студии достаточно для комфортной организации
+                жизни в ней. Модная лаконичная студия, где во главе функциональ-
+                ность и присутствует простор для творчества хозяина.</p>
+              <ul class="models__item__details__list">
+                <li class="models__item__details__list-item">топовая функциональность</li>
+                <li class="models__item__details__list-item">максимальная комплектация</li>
+                <li class="models__item__details__list-item">самый функциональный в своем классе</li>
+              </ul>
+            </div>
+            <img src="img/attachments/start_item-2.png" alt="" class="models__item__pic__bg">
+          </div>
+        </div>
+        <div class="models__item">
+          <div class="models__item__pic">
+            <div class="models__item__pic__info">
+              <img src="img/attachments/start_item-3_logo.png" alt="" class="models__item__pic__logo">
+            </div>
+            <div class="models__item__details">
+              <img src="img/attachments/start_item-1_details.png" alt="" class="models__item__details__pic">
+              <h2 class="models__item__details__header">Старт оптима</h2>
+              <p class="models__item__details__text">Надежный стартовый вариант в оптимальной комплектации. Актив-
+                ного пространства студии достаточно для комфортной организации
+                жизни в ней. Модная лаконичная студия, где во главе функциональ-
+                ность и присутствует простор для творчества хозяина.</p>
+              <ul class="models__item__details__list">
+                <li class="models__item__details__list-item">топовая функциональность</li>
+                <li class="models__item__details__list-item">максимальная комплектация</li>
+                <li class="models__item__details__list-item">самый функциональный в своем классе</li>
+              </ul>
+            </div>
+            <img src="img/attachments/start_item-3.png" alt="" class="models__item__pic__bg">
+          </div>
+        </div>
+        <div class="models__item">
+          <div class="models__item__pic">
+            <div class="models__item__pic__info">
+              <img src="img/attachments/models_item-4_logo.png" alt="" class="models__item__pic__logo">
+            </div>
+            <div class="models__item__details">
+              <img src="img/attachments/start_item-1_details.png" alt="" class="models__item__details__pic">
+              <h2 class="models__item__details__header">Старт оптима</h2>
+              <p class="models__item__details__text">Надежный стартовый вариант в оптимальной комплектации. Актив-
+                ного пространства студии достаточно для комфортной организации
+                жизни в ней. Модная лаконичная студия, где во главе функциональ-
+                ность и присутствует простор для творчества хозяина.</p>
+              <ul class="models__item__details__list">
+                <li class="models__item__details__list-item">топовая функциональность</li>
+                <li class="models__item__details__list-item">максимальная комплектация</li>
+                <li class="models__item__details__list-item">самый функциональный в своем классе</li>
+              </ul>
+            </div>
+            <img src="img/attachments/models_item-4.png" alt="" class="models__item__pic__bg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="buy">
+    <div class="buy__body container">
+      <h2 class="buy__header">Способы покупки</h2>
+      <div class="buy__methods">
+        <div class="buy__item">
+          <img src="img/attachments/buy_item-1.png" alt="" class="buy__item__pic">
+          <div class="buy__item__info">
+            <h3 class="buy__item__header">Ипотека</h3>
+            <p class="buy__item__desc">Ипотека в надежном банке</p>
+            <span class="buy__item__price">от 9000 ₽ / мес </span>
+          </div>
+          <a href="" class="buy__item__arrow">
+            <img src="img/icons/buy_arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="buy__item">
+          <img src="img/attachments/buy_item-2.png" alt="" class="buy__item__pic">
+          <div class="buy__item__info">
+            <h3 class="buy__item__header">Материнский капитал</h3>
+            <p class="buy__item__desc">Можно использовать для данной квартиры</p>
+            <span class="buy__item__price">575 360 ₽ / мес </span>
+          </div>
+          <a href="" class="buy__item__arrow">
+            <img src="img/icons/buy_arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="buy__item">
+          <img src="img/attachments/buy_item-3.png" alt="" class="buy__item__pic">
+          <div class="buy__item__info">
+            <h3 class="buy__item__header">Рассрочка</h3>
+            <p class="buy__item__desc">Поэтапная оплата стоимости квартиры</p>
+            <span class="buy__item__price">от 135000 ₽ / мес </span>
+          </div>
+          <a href="" class="buy__item__arrow">
+            <img src="img/icons/buy_arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="buy__item">
+          <img src="img/attachments/buy_item-4.png" alt="" class="buy__item__pic">
+          <div class="buy__item__info">
+            <h3 class="buy__item__header">Обмен</h3>
+            <p class="buy__item__desc">Существенно улучшить условия жизни</p>
+            <span class="buy__item__price">равноценный / неравноценный</span>
+          </div>
+          <a href="" class="buy__item__arrow">
+            <img src="img/icons/buy_arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="credit">
+    <div class="credit__body container">
+      <h1 class="credit__header">Ипотека от 0,7%</h1>
+      <p class="credit__desc">
+        Наши сотрудники будут рады помочь вам выбрать и оформить
+        <br>
+        ипотечный кредит на самых выгодных условиях.
+      </p>
+      <button class="credit__request modal-form">Заявка на ипотеку</button>
+    </div>
+  </section>
+  <section class="sets apartment">
+    <div class="sets__body container">
+      <h2 class="sets__header">Популярные комплектации квартир</h2>
+      <div class="sets__slider">
+        <div class="sets__switch prev">
+          <img src="img/icons/sets_slider-prev.svg" alt="">
+        </div>
+        <div class="sets__switch next">
+          <img src="img/icons/sets_slider-next.svg" alt="">
+        </div>
+        <div class="sets__row">
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-1.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">1Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-2.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-1.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-2.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-1.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">5Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-2.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">6Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+          <div class="sets__item">
+            <div class="sets__img">
+              <div class="sets__details">
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_decoration-icon.svg" alt="">Отделка квартиры
+                </a>
+                <a href="" class="sets__details__link">
+                  <img src="img/icons/sets_storage-icon.svg" alt="">Кладовые помещения
+                </a>
+              </div>
+              <img src="img/attachments/sets_pic-1.png" alt="" class="sets__pic">
+            </div>
+            <div class="sets__content">
+              <div class="sets__desc">
+                <div class="sets__style">
+                  <img class="sets__style__pic" src="img/icons/sets_style-icon.svg" alt="">
+                  <span class="sets__style__type">7Смарт фэшн</span>
+                </div>
+                <div class="sets__area">
+                  <h6 class="sets__area__header">Площадь</h6>
+                  <span class="sets__area__value">16.63м</span>
+                </div>
+              </div>
+              <div class="sets__devider"></div>
+              <div class="sets__cost">
+                <h6 class="sets__cost__header">Стоимость </h6>
+                <span class="sets__cost__value">2 808 404 ₽</span>
+              </div>
+              <button class="sets__reserve modal-form">ЗАБРОНИРОВАТЬ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offers">
+    <div class="container">
+      <div class="offers__body">
+        <div class="offers__item consultation">
+          <div class="offers__item__body">
+            <div class="offers__item__info">
+              <h3 class="offers__item__header">Помогу выбрать подходящую
+                комплектацию квартиры</h3>
+              <button class="offers__item__btn modal-form">КОНСУЛЬТАЦИЯ</button>
+            </div>
+            <img src="img/attachments/offers_pic-1.png" alt="" class="offers__item__pic">
+          </div>
+        </div>
+        <div class="offers__item sign-up">
+          <div class="offers__item__body">
+            <div class="offers__item__info">
+              <h3 class="offers__item__header">Запишитесь на бесплатную
+                консультацию дизайнера
+                интерьера</h3>
+              <button class="offers__item__btn modal-form">ЗАПИСАТЬСЯ</button>
+            </div>
+            <img src="img/attachments/offers_pic-2.png" alt="" class="offers__item__pic">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal__item consultation">
+      <img class="modal__close" src="img/icons/modal_close.svg" alt="">
+      <div class="modal__content">
+        <h2 class="modal__header">
+          Получить
+          <br>
+          консультацию
+          <br>
+          по материнскому
+          <br>
+          капиталу
+        </h2>
+        <div class="modal__devider"></div>
+        <form action="" class="modal__form">
+          <input type="text" class="modal__name" placeholder="Как Вас зовут">
+          <input type="phone" class="modal__number" placeholder="Номер телефона">
+          <button class="modal__btn">ПОЛУЧИТЬ ПОДТВЕРЖДЕНИЕ</button>
+          <span class="modal__agreement">
+            Нажимая на кнопку, вы даете согласие на
+            <br>
+            <a href="">обработку персональных данных</a>
+          </span>
+        </form>
+      </div>
+    </div>
+    <div class="modal__item form">
+      <img class="modal__close" src="img/icons/modal_close.svg" alt="">
+      <div class="modal__content">
+        <form action="" class="modal__form">
+          <input type="text" class="modal__name" placeholder="Имя" required>
+          <input type="phone" class="modal__number" placeholder="Телефон" required>
+          <button class="modal__btn">ОТПРАВИТЬ</button>
+          <span class="modal__agreement">
+            <input type="checkbox" id="modal-agree">
+            <label for="modal-agree">Согласен с условиями</label>
+            <a href="">пользовательского соглашения</a>
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer__body container">
+      <div class="footer__item" id="projects">
+        <h5 class="footer__item__header">Проекты</h5>
+        <ul class="footer__item__list">
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Легенда парк</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Фамилия</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Заречный</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Первая Линия. Гавань</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Первая Линия. Пляж</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item" id="company">
+        <h5 class="footer__item__header">Компания</h5>
+        <ul class="footer__item__list">
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Блог</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Партнеры</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Вакансии</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Отзывы</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Новости</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item" id="buy">
+        <h5 class="footer__item__header">Как купить</h5>
+        <ul class="footer__item__list">
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Ипотека</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Рассрочка</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Материнский капитал</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Молодая семья</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Бюджетникам</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item" id="apartments">
+        <h5 class="footer__item__header">Квартиры</h5>
+        <ul class="footer__item__list">
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Студии</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Однокомнатные</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Двухкомнатные</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Трехкомнатные</a>
+          </li>
+          <li class="footer__item__list-item">
+            <a href="" class="footer__item__list-link">Готовые</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item" id="media">
+        <a href="">
+          <img src="img/logos/footer_logo.png" alt="" class="footer__item__logo">
+        </a>
+        <span class="footer__item__address">
+          БЦ «Ермак»
+          <br>
+          ул. Советская, д. 51, к. 1, 7 этаж, Тюмень
+        </span>
+        <div class="footer__item__soc">
+          <a href="">
+            <img src="img/icons/footer_facebook.svg" alt="" class="footer__item__soc-item">
+          </a>
+          <a href="">
+            <img src="img/icons/footer_ok.svg" alt="" class="footer__item__soc-item">
+          </a>
+          <a href="">
+            <img src="img/icons/footer_vk.svg" alt="" class="footer__item__soc-item">
+          </a>
+          <a href="">
+            <img src="img/icons/footer_instagram.svg" alt="" class="footer__item__soc-item">
+          </a>
+          <a href="">
+            <img src="img/icons/footer_youtube.svg" alt="" class="footer__item__soc-item">
+          </a>
+        </div>
+        <span class="footer__item__phone">+7 (3452) 53-98-53</span>
+      </div>
+      <div class="footer__item" id="devider"></div>
+      <p class="footer__item" id="politics">
+        Сайт носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса Российской Федерации. О наличии и
+        <br>
+        стоимости указанных квартир обращайтесь в отдел продаж. Политика персональных данных.
+        <br>
+        Проектные декларации размещены на сайте наш.дом.рф.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- JQuery -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+  <!-- Bootstrap -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>-->
+  <!-- Our scripts -->
+  <script src="js/configuration.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/models.js"></script>
+
+</body>
+
+</html>
